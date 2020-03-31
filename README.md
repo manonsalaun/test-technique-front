@@ -1,6 +1,6 @@
-# Test technique front-end
+# Test technique front-end - ReactJS
 
-Selon votre profil technique, vous utiliserez ReactJS ou React Native.  
+L'utilisation de ReactJS est obligatoire
 L'utilisation de Redux est un plus dans le cas du poste de dev Junior.
 
 __Objectif__ : Utiliser l'API Movie Database, afin de réaliser une interface utilisateur.  
@@ -34,5 +34,7 @@ Un utilisateur peut se créer une liste de film à voir.
 
 __Ajout d'un système de rating__:<br/>
 Un utilisateur peut ajouter une note sur chaque film.
+
+Si certaines questions vous semblent ambigües, faite ce qui vous semble le plus pertinent pour vous.
 
 Bon courage ! 
