@@ -1,15 +1,14 @@
-import React, { FunctionComponent, useState, useEffect } from 'react';
+import React, { FunctionComponent, useEffect, useContext } from 'react';
 import { RouteComponentProps, Link, useHistory } from 'react-router-dom';
-import { Movie } from "../models/movie-type";
 import MovieService from '../services/movie-service';
 import formatDate from '../helpers/format-date';
+import { DataContext } from '../store/dataContext';
 
 type Params = { id: string };
 
 const MovieDetail: FunctionComponent<RouteComponentProps<Params>> = ({ match }) => {
     const history = useHistory();
-    const [similarMovies, setSimilarMovies] = useState<Movie[]>([])
-    const [movie, setMovie] = useState<Movie | null>(null);
+    const { movie, setMovie, similarMovies, setSimilarMovies } = useContext(DataContext);
 
     const goToMovieDetails = (id: number) => {
         history.push(`/movies/${id}`)

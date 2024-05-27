@@ -3,7 +3,6 @@ import { Movie } from "../models/movie-type";
 export default class MovieService {
   static apiKey = process.env.REACT_APP_MY_API_KEY
 
-
   static getMovies(): Promise<Movie[]> {
     return fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${MovieService.apiKey}`)
       .then(response => response.json())
@@ -23,7 +22,6 @@ export default class MovieService {
       .then(response => response.json())
       .then(data => data.results)
       .catch(error => this.handleError(error))
-
   }
 
   static isEmpty(data: Object): boolean {

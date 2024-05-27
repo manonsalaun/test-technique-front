@@ -8,7 +8,7 @@ type Props = {
     movie: Movie;
 }
 
-const MoviePage: FunctionComponent<Props> = ({ movie }) => {
+const MovieCard: FunctionComponent<Props> = ({ movie }) => {
     const history = useHistory();
 
     const goToMovieDetails = (id: number) => {
@@ -32,4 +32,4 @@ const MoviePage: FunctionComponent<Props> = ({ movie }) => {
     );
 }
 
-export default MoviePage;
+export default MovieCard;
